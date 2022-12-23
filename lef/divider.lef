@@ -1,0 +1,151 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO divider
+  CLASS BLOCK ;
+  FOREIGN divider ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 300.000 BY 300.000 ;
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1.000 224.440 4.000 225.040 ;
+    END
+  END clk
+  PIN cout1
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 296.000 17.040 299.000 17.640 ;
+    END
+  END cout1
+  PIN cout10
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 1.000 0.370 4.000 ;
+    END
+  END cout10
+  PIN cout2
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 248.030 296.000 248.310 299.000 ;
+    END
+  END cout2
+  PIN cout3
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 212.610 1.000 212.890 4.000 ;
+    END
+  END cout3
+  PIN cout4
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1.000 112.240 4.000 112.840 ;
+    END
+  END cout4
+  PIN cout5
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 296.000 244.840 299.000 245.440 ;
+    END
+  END cout5
+  PIN cout6
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 106.350 1.000 106.630 4.000 ;
+    END
+  END cout6
+  PIN cout7
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 32.290 296.000 32.570 299.000 ;
+    END
+  END cout7
+  PIN cout8
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 141.770 296.000 142.050 299.000 ;
+    END
+  END cout8
+  PIN cout9
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 296.000 132.640 299.000 133.240 ;
+    END
+  END cout9
+  PIN vccd1
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 288.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 174.640 10.640 176.240 288.560 ;
+    END
+  END vccd1
+  PIN vssd1
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 97.840 10.640 99.440 288.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 251.440 10.640 253.040 288.560 ;
+    END
+  END vssd1
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 294.400 288.405 ;
+      LAYER met1 ;
+        RECT 0.070 10.640 294.400 288.560 ;
+      LAYER met2 ;
+        RECT 0.100 295.720 32.010 296.000 ;
+        RECT 32.850 295.720 141.490 296.000 ;
+        RECT 142.330 295.720 247.750 296.000 ;
+        RECT 248.590 295.720 291.550 296.000 ;
+        RECT 0.100 4.280 291.550 295.720 ;
+        RECT 0.650 4.000 106.070 4.280 ;
+        RECT 106.910 4.000 212.330 4.280 ;
+        RECT 213.170 4.000 291.550 4.280 ;
+      LAYER met3 ;
+        RECT 4.000 245.840 296.000 288.485 ;
+        RECT 4.000 244.440 295.600 245.840 ;
+        RECT 4.000 225.440 296.000 244.440 ;
+        RECT 4.400 224.040 296.000 225.440 ;
+        RECT 4.000 133.640 296.000 224.040 ;
+        RECT 4.000 132.240 295.600 133.640 ;
+        RECT 4.000 113.240 296.000 132.240 ;
+        RECT 4.400 111.840 296.000 113.240 ;
+        RECT 4.000 18.040 296.000 111.840 ;
+        RECT 4.000 16.640 295.600 18.040 ;
+        RECT 4.000 10.715 296.000 16.640 ;
+  END
+END divider
+END LIBRARY
+
