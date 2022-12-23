@@ -1,0 +1,9 @@
+# Caravel user project includes
+-v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v	     
+-v $(USER_PROJECT_VERILOG)/rtl/Top_Module_4_ALU.v
+-v $(USER_PROJECT_VERILOG)/rtl/posoco2000.v
+-v $(USER_PROJECT_VERILOG)/rtl/OQPSK_RCOSINE_ALL.v
+-v $(USER_PROJECT_VERILOG)/rtl/OQPSK_PS_RCOSINE2.v
+-v $(USER_PROJECT_VERILOG)/rtl/divider.v
+
+ 
